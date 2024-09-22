@@ -1,0 +1,31 @@
+
+Bisection Method
+---------------------------------------------------------------------------------------------------------------
+Algorithm :
+------------
+Assuming that a function f(x) which is continuous and its solution lies within the interval (a, b) ;
+is already defined in the program ....
+
+1. Input the intervals in which the solution of the curve exists i.e. say 'a' and 'b'.
+2. Input the precision upto which the root should be approximated.
+3. Calculate maximum number of iterations that looks mathematically possible at that precision's approximation.
+			n = (log(b-a) - log(E)) / log(2)
+4. Compute with the bisection method with iterations = 0 ;
+A. IF f(a)*f(b) == 0 :
+   IF f(a) == 0 -> a is the solution.
+   IF f(b) == 0 -> b is the solution.
+B. IF f(a)*f(b) > 0 :
+   The solution doesn't exist within this interval (a, b).
+C. IF f(a)*f(b) < 0 :
+   WHILE f(c) > E :
+   Calculate c = (a+b)/2.
+   IF f(a)*f(c) < 0 : b = c
+   ELSE a = c
+   iterations ++ ;
+   IF iterations > n : BREAK ;
+5. Get the value of c after the execution of the loop.   
+---------------------------------------------------------------------------------------------------------------
+  
+	
+   
+   

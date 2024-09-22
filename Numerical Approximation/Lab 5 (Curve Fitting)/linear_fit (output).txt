@@ -1,0 +1,28 @@
+!!!!! CURVE FITTING !!!!!
+Input the number of points in the dataset to fit: 4
+Dataset ->
+1. X: 1
+   Y: 4
+2. X: 2.5
+   Y: 7
+3. X: 4
+   Y: 10
+4. X: 6
+   Y: 13.75
+Fit to ?
+ 1. Linear       2. Exponential
+ => 1
+         X         Y
+------------------------------
+         1         4
+       2.5         7
+         4        10
+         6     13.75
+Solution:
+A: 2.09932
+B: 1.95205
+Linear Fit -> Y = 2.09932 + 1.95205 X
+
+--------------------------------
+Process exited after 12.99 seconds with return value 0
+Press any key to continue . . .
